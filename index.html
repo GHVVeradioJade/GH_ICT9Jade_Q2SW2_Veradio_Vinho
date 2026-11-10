@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title> Bootstrap Forms and Navigation</title>
+    <style>
+         body {
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSARBAh1GOolecLLc29RNkGvMmY8OV271pK-hz6WyR52rEWh3mcNx-JoK5b&s=10);
+            background-size:cover
+         }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">O.B. Montessori</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Homepage</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="office-hours">
+<h2>School Hours</h2>
+    <table class="table table-hover table-sm">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Office Hours</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>7:00 AM – 2:30 PM</td>
+                <td>Registrar's Office</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>7:00 AM – 2:00 PM</td>
+                <td>Accounting Office</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>7:00 AM – 1:30 PM</td>
+                <td>Guidance Office</td>
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td>7:00 AM – 2:30 PM</td>
+                <td>Principal's Office</td>
+            </tr>
+
+            <tr>
+                <td>Friday</td>
+                <td>7:00 AM – 2:00 PM</td>
+                <td>Admin Office</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<form action="#" method="POST">
+              
+              <div class="mb-1">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Enter your full name" required>
+              </div>
+
+
+              
+              <div class="mb-2">
+                <label for="emailAddress" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="emailAddress" name="emailAddress" required>
+              </div>
+
+
+            
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject">
+              </div>
+             
+
+
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+
+              
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+            </div>
+</body>
+</html>
